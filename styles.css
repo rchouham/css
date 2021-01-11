@@ -31,3 +31,32 @@
     top: 20px;
 }
 
+#whole-menu {
+    /*display: block;*/
+    width: 60px;
+    height: 20px;
+    padding: 20px 0;
+    /*transition: width 2s, height 2s;*/
+}
+
+/* Begin staat STAAT: middelste streep valt uit */
+#whole-menu:hover #menu {
+    background-color: transparent;}
+
+
+/* EIND STAAT: transform naar x  */
+
+#whole-menu:hover #menu::before {
+    transform: rotate(45deg);
+    top:20px;
+
+}
+
+
+#whole-menu:hover #menu::after {
+    transform: rotate(-45deg);
+    bottom: -20px;
+
+
+
+}
